@@ -365,7 +365,9 @@ class tx_ttaddress_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
         $markerArray['###CITY###']         = $lcObj->stdWrap($address['city'],               $lConf['city.']);
         $markerArray['###ZIP###']          = $lcObj->stdWrap($address['zip'],                $lConf['zip.']);
         $markerArray['###REGION###']       = $lcObj->stdWrap($address['region'],             $lConf['region.']);
-        $markerArray['###COUNTRY###']      = $lcObj->stdWrap($address['country'],            $lConf['country.']);
+        $markerArray['###COUNTRY###']      = $lcObj->stdWrap($address['country'],            $lConf['country.']);  
+        $markerArray['###LATITUDE###']     = $lcObj->stdWrap($address['latitude'],           $lConf['latitude.']);
+        $markerArray['###LONGITUDE###']    = $lcObj->stdWrap($address['longitude'],          $lConf['longitude.']);
         $markerArray['###DESCRIPTION###']  = $lcObj->stdWrap($address['description'],        $lConf['description.']);
         $markerArray['###SKYPE###']        = $lcObj->stdWrap($address['skype'],              $lConf['skype.']);
         $markerArray['###TWITTER###']      = $lcObj->stdWrap($address['twitter'],            $lConf['twitter.']);
